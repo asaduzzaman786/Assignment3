@@ -16,27 +16,81 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!--========= Font awesome =========-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-     <!--============= Custom Css  =============-->
+    <!--============= Custom Css  =============-->
     <style>
-        .lato-font{
+        .lato-font {
             font-family: 'Lato', sans-serif;
+        }
+
+        .search-icon{
+            padding-left: 10px;
+            background: url("./images/magnifying-glass-solid.svg") no-repeat right;
+            background-size: 30px;
         }
     </style>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-color': '#F85559',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 </head>
 
 <body class="lato-font">
-    
+    <header class="container mx-auto">
+        <!--============= Navbar  =============-->
+        <nav>
+            <div class="navbar bg-base-100 md:bg-primary-color rounded-[600px] lg:text-white">
+                <div class="navbar-start hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-[18px] font-[500]">Home</a></li>
+                        <li><a class="text-[18px] font-[500]">About Us</a></li>
+                        <li><a class="text-[18px] font-[500]">Shop</a></li>
+                        <li><a class="text-[18px] font-[500]">All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-center">
+                    <img src="./images/logo.png" alt="">
+                    <a class="ml-3 text-[30px] md:text-[40px] normal-case font-[700]" href="">Fruit Burst</a>
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden ml-[9.5rem]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-[175px] ml-[2rem] space-y-2">
+                            <li><a class="text-[18px]font-[500]">Home</a></li>
+                            <li><a class="text-[18px]font-[500]">About Us</a></li>
+                            <li><a class="text-[18px]font-[500]">Shop</a></li>
+                            <li><a class="text-[18px]font-[500]">All Fruits</a></li>
+                            <input type="text" placeholder="Search here"
+                                class="sm:hidden input input-bordered w-[150px] h-[50px] rounded-[50px] search-icon" />
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-end hidden sm:flex ">
+                    <div class="form-control">
+                        <input type="text" placeholder="Search here"
+                            class="input input-bordered h-[50px] rounded-[50px] lg:w-[400px] sm:w-[200px] search-icon text-[18px] font-[500] text-black bg-white border-none" />
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
