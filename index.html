@@ -71,7 +71,7 @@
                             </svg>
                         </label>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-[175px] ml-[2rem] space-y-2">
+                            class="menu menu-sm dropdown-content mt-3 z-[30] p-2 shadow bg-base-100 rounded-box w-[175px] ml-[2rem] space-y-2">
                             <li><a class="text-[18px]font-[500]">Home</a></li>
                             <li><a class="text-[18px]font-[500]">About Us</a></li>
                             <li><a class="text-[18px]font-[500]">Shop</a></li>
@@ -90,7 +90,7 @@
             </div>
         </nav>
         <div class="my-10 relative">
-            <div class="carousel w-full lg:h-[460px] z-10">
+            <div class="carousel w-full lg:h-[460px] z-[20]">
                 <div id="slide1" class="overlay">
                     <img class="overlay" src="./images/banner1.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -120,10 +120,11 @@
                     </div>
                 </div>
             </div>
-            <div class="absolute ml-[7%] -mt-[44%] lg:ml-[20%] lg:-mt-[35%] z-20">
+            <div class="absolute ml-[7%] -mt-[44%] lg:ml-[20%] lg:-mt-[35%] z-[10]">
                 <h1 class="text-center text-[28px] font-[600] lg:text-[72px] lg:font-[800] text-white">Exotic tastes at
                     your <br> doorstep</h1>
-                <p class="text-[16px] text-white text-center w-[365px] lg:w-[100%] mx-auto">We supply highly quality organic products</p>
+                <p class="text-[16px] md:text-[28px] text-white text-center w-[365px] lg:w-[100%] mx-auto">We supply
+                    highly quality organic products</p>
                 <button
                     class="btn bg-primary-color block mx-auto lg:text-[20px] lg:font-[800] text-white border-none rounded-[8px] my-5"
                     href="">Shop Now</button>
@@ -131,7 +132,167 @@
         </div>
     </header>
     <main>
-
+        <!--============= Start Deal Section  =============-->
+        <section class="container mx-auto my-10">
+            <div class="lg:flex justify-between items-center space-y-8">
+                <div class="lg:text-left text-center">
+                    <h2 class="text-[28px] md:text-[48px] text-[#121212] font-[800]">Deal of the day</h2>
+                    <p class="text-[16px] text-[#121212] font-[500] md:w-[615px]">Contrary to popular belief, is not
+                        simply
+                        random text. It has roots in a piece of classical Latin literature from 45 BC, making it over
+                        2000
+                        years old.</p>
+                </div>
+                <div class="grid grid-flow-col gap-4 text-center auto-cols-max">
+                    <div class="flex flex-col">
+                        <span class="text-5xl">
+                            <span class="text-[48px] font-[800] text-[#121212]">29</span>
+                        </span>
+                        Days
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            :
+                        </span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-5xl">
+                            <span class="text-[48px] font-[800] text-[#121212]">15</span>
+                        </span>
+                        Hours
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            :
+                        </span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-5xl">
+                            <span class="text-[48px] font-[800] text-[#121212]">25</span>
+                        </span>
+                        Minutes
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            :
+                        </span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-5xl">
+                            <span class="text-[48px] font-[800] text-[#121212]">08</span>
+                        </span>
+                        Seconds
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-12">
+                <div class="card bg-base-100 shadow-xl border-[1px] border-[#12121228] rounded-[8px]">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-[#121212] font-[700]">12.90$ - 18.85$</h2>
+                        <p class="my-3 text-[#121212] text-[16px] font-[500]">Apples</p>
+                        <div class="rating rating-lg rating-half ">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                                checked />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-2" />
+                        </div>
+                        <div class="card-actions mt-4">
+                            <a class="text-[#F85559] text-[18px] font-[700]" href="">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl border-[1px] border-[#12121228] rounded-[8px]">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-[#121212] font-[700]">12.90$ - 18.85$</h2>
+                        <p class="my-3 text-[#121212] text-[16px] font-[500]">Orange</p>
+                        <div class="rating rating-lg rating-half ">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                                checked />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-2" />
+                        </div>
+                        <div class="card-actions mt-4">
+                            <a class="text-[#F85559] text-[18px] font-[700]" href="">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl border-[1px] border-[#12121228] rounded-[8px]">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-[#121212] font-[700]">12.90$ - 18.85$</h2>
+                        <p class="my-3 text-[#121212] text-[16px] font-[500]">Red Dragon</p>
+                        <div class="rating rating-lg rating-half ">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                                checked />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-2" />
+                        </div>
+                        <div class="card-actions mt-4">
+                            <a class="text-[#F85559] text-[18px] font-[700]" href="">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl border-[1px] border-[#12121228] rounded-[8px]">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-[#121212] font-[700]">12.90$ - 18.85$</h2>
+                        <p class="my-3 text-[#121212] text-[16px] font-[500]">Banana</p>
+                        <div class="rating rating-lg rating-half ">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                                checked />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#eb5e0d] mask mask-star-2 mask-half-2" />
+                        </div>
+                        <div class="card-actions mt-4">
+                            <a class="text-[#F85559] text-[18px] font-[700]" href="">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--============= End Deal Section  =============-->
     </main>
     <footer class="footer footer-center p-10 bg-[#121212] text-primary-content">
         <div class="flex">
@@ -143,10 +304,10 @@
             <a class="link link-hover text-[18px] font-[600]">About us</a>
             <a class="link link-hover text-[18px] font-[600]">Shop</a>
             <a class="link link-hover text-[18px] font-[600]">All Fruits</a>
-           <div class="flex justify-center justify-items-center items-center">
-            <a class="link link-hover text-[18px] font-[600]">Support</a>
-            <a class="link link-hover text-[18px] font-[600]">My Account</a>
-           </div>
+            <div class="flex justify-center justify-items-center items-center">
+                <a class="link link-hover text-[18px] font-[600]">Support</a>
+                <a class="link link-hover text-[18px] font-[600]">My Account</a>
+            </div>
         </div>
         <div>
             <div class="grid grid-flow-col gap-4 pb-5">
